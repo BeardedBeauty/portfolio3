@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="logic.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript" src="assets/logic.js"></script>
+    <html lang="en-us">
+    <title>John Ochs</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="style/style.css"> -->
+</head>
+
+<body>
+    <div id="modal1" class="modal">
+        <div class="modal-content grey-text">
+            <h4>contact</h4>
+        </div>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6 offset-s1">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">email</label>
+                    <span class="helper-text" data-error="email invalid" data-success="valid">rad.boi@coolio.nut</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s10 offset-s1">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">message</label>
+                </div>
+            </div>
+        </form>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-orange btn-flat">Send it</a>
+        </div>
+    </div>
+    <div class="boxinternal z-depth-3">
+        <div class="scene" onclick="color();">
+            <div class="box center-align">
+                <div class="front face center-align" id="org">
+                    <img class="plane" src="assets/img/info.png" />
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="right face">
+                    <p>about</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scene">
+            <div class="box modal-trigger" href="#modal1">
+                <div class="front face center-align" id="org">
+                    <img class="plane" src="assets/img/plane.png" />
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="right face center-align">
+                    <p>contact</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scene">
+            <div class="box">
+                <div class="front face center-align" id="org">
+                    <img class="plane" src="assets/img/banjo.png" />
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="right face center-align">
+                    <p>music</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scene">
+            <div class="box">
+                <div class="front face center-align" id="org">
+                    <img class="plane" src="assets/img/port.png" />
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="right face center-align">
+                    <p>portfolio</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scene">
+            <div class="box">
+                <div class="front face center-align" id="org">
+                    <img class="plane" src="assets/img/train.png" />
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="right face center-align">
+                    <p>travelogue</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scene">
+            <div class="box">
+                <div class="front face center-align" id="org">
+                    <img class="plane" src="assets/img/box.png" />
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="right face center-align">
+                    <p>other</p>
+                </div>
+            </div>
+        </div>
+        <div class="fill"></div>
+    </div>
+    <div class="parallax-container">
+        <div class="row">
+            <span class="center-align blocc z-depth-2 fadeonload">
+                <h5>John W Ochs</h5>
+            </span>
+        </div>
+        <div class="parallax">
+            <img class="homebg" src="assets/img/nepal2.JPG" />
+        </div>
+    </div>
+    <br><br><br>
+    <!-- <img class="blur" src="assets/img/nepal.JPG" /> -->
+    <div class="container">
+        <div class="row">
+            <div class="col s10 m12 l12 offset-s2">
+                <p>
+                    I am a Minnesota based web developer who loves to travel and plays folk and americana music for fun.
+                    Browse to see projects being worked on or upcoming travels!
+                </p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col s10 m6 l5 offset-s2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/img/bandaid.png">
+                        <span class="card-title">portfolio: band-aid</span>
+                    </div>
+                    <div class="card-content">
+                        <p>First project completed in a group from the University of Minnesota bootcamp is a music
+                            player with
+                            the ability to suggest new music based on what you're listening to.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Band-Aid</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s10 m6 l5 offset-s2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/img/bandaid.png">
+                        <span class="card-title">music: the second time I met Dave Simonett</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Trampled by Turtles front man Dave Simonett ran into me at a public pool.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Simonett story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row"></div>
+    </div>
+    <div class="parallax-container">
+        <div class="row">
+            <div class="">
+                <br>
+                <div class="card grey darken-1 op9">
+                    <div class="container">
+                        <div class="row">
+                            <div class="card-content white-text col s10 offset-s2 l12 offset-m1 m10">
+                                <span class="card-title">travelogue: new zealand</span>
+                                <p class="">see the past experiences and travels in the most recent trip in new Zealand
+                                </p>
+                            </div>
+                            <div class="card-action col s10 offset-s2 l12 offset-m1 m10">
+                                <a href="#">go</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax">
+            <img class="homebg" src="assets/img/nz.JPG" />
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s10 m12 l12 offset-s2">
+                <p>
+                    Lorem ipsum dolor amet viral man bun kale chips heirloom irony fanny pack crucifix PBR&B whatever.
+                    Copper
+                    mug cliche occupy squid humblebrag offal lyft umami selvage gastropub synth mustache listicle.
+                    Williamsburg
+                    pug kogi squid, celiac bushwick synth yuccie DIY raw denim aesthetic sartorial normcore tilde
+                    scenester.
+                    Brooklyn biodiesel ramps deep v occupy. Food truck coloring book stumptown, raclette sriracha
+                    flannel
+                    vaporware man braid jianbing VHS PBR&B brunch typewriter lo-fi.
+
+                    Keytar fashion axe kale chips you probably haven't heard of them tumeric blog umami vegan hexagon
+                    letterpress small batch. Pug shaman photo booth cornhole. Drinking vinegar iPhone readymade irony
+                    selfies
+                    thundercats raclette. Meggings polaroid VHS, poutine slow-carb marfa tacos viral artisan. Keffiyeh
+                    post-ironic slow-carb master cleanse meggings. Crucifix tbh fashion axe vegan four loko.
+
+                    IPhone af edison bulb, kale chips letterpress sartorial pour-over skateboard waistcoat sriracha.
+                    Subway
+                    tile
+                    vegan selvage meditation slow-carb deep v williamsburg lo-fi celiac normcore sartorial affogato. Art
+                    party
+                    vice raclette mixtape. Vice single-origin coffee kinfolk, biodiesel fashion axe ugh bespoke hella
+                    kogi
+                    distillery dreamcatcher. Offal four dollar toast mustache fixie kitsch poutine iPhone. Poke la croix
+                    pok
+                    pok
+                    shaman 8-bit biodiesel vegan.
+
+                    Lomo pork belly poke live-edge taxidermy tilde plaid bushwick taiyaki. Vegan marfa polaroid
+                    knausgaard
+                    pork
+                    belly banjo selfies. Single-origin coffee art party YOLO church-key, kale chips cliche twee.
+                    Normcore
+                    lomo
+                    cornhole, dreamcatcher man bun cred locavore chia tousled. Before they sold out asymmetrical pabst,
+                    shoreditch drinking vinegar put a bird on it kitsch sriracha craft beer wolf ethical.
+
+                    Plaid brunch tote bag kogi. Af 90's godard, four loko deep v truffaut vinyl 8-bit gastropub tote bag
+                    tousled
+                    adaptogen. Subway tile semiotics meh bushwick roof party fashion axe. Synth VHS drinking vinegar,
+                    meditation
+                    food truck four dollar toast photo booth. Truffaut authentic bitters messenger bag tattooed,
+                    vexillologist
+                    glossier +1 pork belly. Snackwave sartorial unicorn pork belly literally heirloom subway tile.
+                    Skateboard
+                    church-key offal, shabby chic farm-to-table chicharrones cornhole DIY franzen taiyaki hella.
+                    Oh. You need a little dummy text for your mockup? How quaint.
+
+                    I bet you’re still using Bootstrap too…
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer grey">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s2">
+                    neat
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        © john ochs 2019
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!--         <div class="boxcontainer">
+            <div class="row"></div>
+            <div class="row">
+                <div class="margin">
+                    <div class="scene">
+                        <div class="box center-align">
+                            <div class="front face center-align">
+                                <img class="plane" src="assets/img/info.png" />
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="right face">
+                                <p>about</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="margin">
+                    <div class="scene">
+                        <div class="box">
+                            <div class="front face center-align">
+                                <img class="plane" src="assets/img/plane.png" />
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="right face center-align">
+                                <p>contact</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin">
+                    <div class="scene">
+                        <div class="box">
+                            <div class="front face center-align">
+                                <img src="assets/img/banjo.png" />
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="right face center-align">
+                                <p>music</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="margin">
+                    <div class="scene">
+                        <div class="box">
+                            <div class="front face center-align">
+                                <img class="plane" src="assets/img/port.png" />
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="right face center-align">
+                                <p>portfolio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin">
+                    <div class="scene">
+                        <div class="box">
+                            <div class="front face center-align">
+                                <img class="plane" src="assets/img/train.png" />
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="right face center-align">
+                                <p>travelogue</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin">
+                    <div class="scene">
+                        <div class="box">
+                            <div class="front face center-align">
+                                <img class="plane" src="assets/img/box.png" />
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="right face center-align">
+                                <p>other</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
