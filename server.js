@@ -1,7 +1,11 @@
 var express = require("express");
 var path = require("path");
 var app = express();
+var hndlbrs = require("express-handlebars");
 var PORT = process.env.PORT || 8890;
+
+app.engine("handlebars", hndlbrs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

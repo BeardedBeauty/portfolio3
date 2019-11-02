@@ -6,7 +6,7 @@
 }
 
 body {
-    line-height: 2.5;
+    line-height: 2.3;
 }
 
 .boxinternal {
@@ -15,6 +15,7 @@ body {
     position: fixed;
     z-index: 9;
     border-top: 8px solid gray;
+    transition: .2s;
 }
 
 .scene {
@@ -23,6 +24,7 @@ body {
     /* margin-left: px; */
     z-index: 10;
     float: left;
+    transition: .2s;
 }
 
 .box {
@@ -49,6 +51,7 @@ body {
 .front {
     transform: rotateY(0deg);
     padding-top: 25px;
+    transition: .2s;
 }
 
 .right {
@@ -57,23 +60,26 @@ body {
     background-color: gray;
     color: lightgrey;
     padding-top: 30px;
+    transition: .2s;
 }
 
 .plane {
     width: 50px;
     height: auto;
-    transition: transform .2s;
+    transition: .2s;
 }
 
 .fill {
     height: 100px;
     width: 100%;
     background-color: orange;
+    transition: .2s;
 }
 
-.top {
-    transform: scale(.75);
-}
+/* .animate {
+    width: 25px;
+    height: auto;
+} */
 
 /* .background-image {
     position: fixed;
@@ -90,22 +96,45 @@ body {
     -ms-filter: blur(5px);
     filter: blur(5px);
   } */
+
 .blocc {
-    padding-top: 260px;
-    margin-top: 10px;
-    color: lightgrey;
+    margin-top: 150px;
+    color: whitesmoke;
     opacity: 0;
     position: absolute;
     background-color: black;
-    height: 110%;
+    height: 100px;
     width: 100%;
     z-index: 5;
+    line-height: 2.5;
+
+}
+.blocc2 {
+    padding: 25px;
+    margin-top: 10px;
+    color: whitesmoke;
+    opacity: 0;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    z-index: 5;
+    line-height: 2.5;
+}
+.blocc3 {
+    padding: 25px;
+    margin-top: 10px;
+    color: whitesmoke;
+    opacity: 0;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 110%;
+    z-index: 1;
     line-height: 2.5;
 }
 
 .blur {
     /* background: url("../img/nepal.JPG") no-repeat center; */
-    border: 1px solid gray;
     opacity: .9;
     -webkit-filter: blur(8px);
     -moz-filter: blur(8px);
@@ -114,7 +143,6 @@ body {
     filter: blur(8px);
     position: absolute;
     background-color: black;
-    height: 100vh;
     z-index: 9;
 }
 
@@ -158,6 +186,9 @@ body {
 .op7 {
     opacity: .7;
 }
+.op0 {
+    opacity: 0;
+}
 
 input:focus {
     border-bottom: 1px solid orange !important;
@@ -181,22 +212,28 @@ label.active {
     background-color: orange;
 }
 
+.juice {
+    width: 100%;
+    background-color: orange;
+    height: 700px;
+
+}
+
 @media screen and (max-width: 600px){
     .boxinternal {
-        height: 100%;
-        width: 75px;
+        height: 100vh;
+        width: 65px;
         position: fixed;
         z-index: 9;
         border-top: 0;
     }
-
+/* 
     .scene {
         width: 75px;
         height: 75px;
-        /* margin-left: px; */
         z-index: 10;
         float: unset;
-    }
+    } */
     
     .box {
         width: 100%;
@@ -235,15 +272,15 @@ label.active {
 
     .fill {
         height: 100vh;
-        width: 75px;
+        width: 65px;
         background-color: orange;
     }
 
-    .plane {
+    /* .plane {
         transform: scale(.75);
-    }
+    } */
 
     .blocc {
-        padding-top: 200px;
+        padding-left: 100px;
     }
 }
