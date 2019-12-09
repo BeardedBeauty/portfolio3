@@ -2,6 +2,7 @@ var express = require("express");
 var path = require("path");
 var app = express();
 var hndlbrs = require("express-handlebars");
+const nodemailer = require('nodemailer');
 var PORT = process.env.PORT || 8890;
 
 app.engine("handlebars", hndlbrs({ defaultLayout: "main" }));

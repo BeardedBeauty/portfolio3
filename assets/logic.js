@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".fadeonload").each(function () {
         setTimeout(() => {
-            $(this).animate({ 'opacity': '0.7', 'margin-top': '220px' }, 1200);
+            $(this).animate({ 'opacity': '0.7', 'margin-top': '180px' }, 1200);
         }, 400);
     });
     $(".fadeonfull").each(function () {
@@ -15,8 +15,18 @@ $(document).ready(function () {
     $(".modal").modal();
     $(".hiddendiv").remove();
 });
+// let transporter = nodemailer.createTransport(transport[, defaults]);
+// transporter.sendMail(data[, callback]);
 
-var l = window.matchMedia("(max-width: 600px)");
+// var message = {
+//     from: 'sender@server.com',
+//     to: "john.w.ochs0@gmail.com",
+//     subject: "portfolio message",
+//     text: 'Plaintext version of the message',
+//     html: '<p>HTML version of the message</p>'
+// };
+
+let l = window.matchMedia("(max-width: 610px)");
 l.addListener(sidenav);
 sidenav(l);
 
@@ -51,7 +61,8 @@ function navbar() {
 
 function sidenav(z) {
     if (z.matches) {
-        console.log("k")
+        console.log($(".p1"));
+        $(".p1").style.marginTop = "0px";
     }
 }
 
