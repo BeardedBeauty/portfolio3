@@ -27,6 +27,7 @@ $(document).ready(function () {
 // };
 
 let l = window.matchMedia("(max-width: 610px)");
+let x = window.matchMedia("(min-width: 611px)");
 l.addListener(sidenav);
 sidenav(l);
 
@@ -61,8 +62,17 @@ function navbar() {
 
 function sidenav(z) {
     if (z.matches) {
-        console.log($(".p1"));
-        $(".p1").style.marginTop = "0px";
+        // console.log($(".p1"));
+        $(".p1")[0].style.marginTop = "0px";
+        $(".boxinternal")[0].style.marginTop = "0px";
+    }
+}
+
+function sidenav2(x) {
+    if (x.matches) {
+        console.log($(".p1"))
+        $(".p1")[0].style.marginTop = "108px";
+        $(".boxinternal")[0].style.marginTop = "-108px";
     }
 }
 
