@@ -118,7 +118,7 @@ body {
     width: 500px;
     z-index: 5;
     line-height: 2.5;
-    border-bottom: 1px solid rgb(193, 196, 53);
+    /* border-bottom: 1px solid rgb(193, 196, 53); */
     -webkit-transform-origin: 100% 0;
     -ms-transform-origin: 100% 0;
     transform-origin: 100% 0;
