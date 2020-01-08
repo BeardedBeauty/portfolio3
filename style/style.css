@@ -253,6 +253,21 @@ body {
     border-bottom: 8px solid grey;
 }
 
+.skillimg {
+    width: 150px;
+    height: auto;
+    margin: 20px;
+}
+
+.separator {
+    width: 100%;
+    height: 100px;
+    background: #B5B5B5;
+    background: -webkit-radial-gradient(top, #B5B5B5, #FFFFFF);
+    background: -moz-radial-gradient(top, #B5B5B5, #FFFFFF);
+    background: radial-gradient(to bottom, #B5B5B5, #FFFFFF);
+}
+
 .op9 {
     opacity: .9;
 }
