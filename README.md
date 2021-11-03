@@ -1,4 +1,4 @@
-# Portfolio (Current)
+# Portfolio
 My rebuilt portfolio, with completed projects and a music hire page. The band is active, and we are for hire. This site mostly consists of basic CSS, with Materialize used for buttons, modals, and the grid.
 
 ## Navigation & Usage
